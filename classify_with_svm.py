@@ -10,12 +10,12 @@ def read_data_from_csv(file_path):
 
 def classify_with_SVC(file_path):
   data = read_data_from_csv(file_path)
-  X, y = data[:, :7], data[:, 7]
+  X, y = data[:, :5], data[:, 5]
   X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
-  print(y_test)
+  print(X_train)
 
-  clf = SVC(kernel='linear', cache_size=2048)
+  clf = SVC(kernel='linear', cache_size=4000)
   clf.fit(X_train, y_train)
   y_pred = clf.predict(X_test)
   print(y_pred)
