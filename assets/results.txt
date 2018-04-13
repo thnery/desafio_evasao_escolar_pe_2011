@@ -1,0 +1,11 @@
+linear
+0.7136027813993916
+accuracy: 0.7136 precision: 0.7136 recall: 1.0000 f1-score: 0.8329
+
+rgf
+0.7199043893959148
+accuracy: 0.7199 precision: 0.7335 recall: 0.9576 f1-score: 0.8307
+
+sigmoid
+0.7155584528465885
+accuracy: 0.7156 precision: 0.7156 recall: 1.0000 f1-score: 0.8342
