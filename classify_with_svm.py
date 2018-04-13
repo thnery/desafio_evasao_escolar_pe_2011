@@ -15,7 +15,11 @@ def classify_with_SVC(file_path):
 
   print(X_train)
 
-  clf = SVC(kernel='linear', cache_size=4000)
+  clf = SVC(kernel='linear', cache_size=2048)
+  # clf = SVC(kernel='rbf', cache_size=2048)
+  # clf = SVC(kernel='poly', cache_size=2048)
+  # clf = SVC(kernel='sigmoid', cache_size=2048)
+  # clf = SVC(kernel='precomputed', cache_size=2048)
   clf.fit(X_train, y_train)
   y_pred = clf.predict(X_test)
   print(y_pred)
